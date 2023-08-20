@@ -1,0 +1,831 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/abc"
+    >
+
+    <Button
+        android:id="@+id/KaydetKalori"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/SpringGreen2"
+
+        android:text="Kaydet" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kaloriSonucTextDegiskeni"
+            android:text=""
+            android:textSize="30dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yemekSonucText"
+            android:text=""
+            android:textSize="30dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/buttonBasicFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonstyle2"
+            android:text="Kahvaltılık" />
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/trans600yeni"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:backgroundTintMode="src_atop"
+          >
+
+
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Haşlanmış Yumurta	(1 adet 50 gr 78 kalori)"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Sahanda Yumurta	(1 porsiyon 50 gr 120 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Sucuklu Yumurta	(1 porsiyon 100 gr 242 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Patates Kızartması	(1 porsiyon 100 gr 312 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Salatalık		(4 parça 60 gr 10 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Domates		(4 parça 60 gr 10 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Kaşar Peynir	(2 parça 60 gr 106 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Kaşarlı Tost	(1 adet 70 gr 212 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Ekmek		(1 parça 50 gr 132 kalori)"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Nutella  	 	(1 porsiyon 25 gr 120 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Patatesli Poğaça	(1 adet 70 gr 246 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Siyah Zeytin 	(5 adet 25 gr 25 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Beyaz Peynir 	(2 parça 80 gr 200 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Omlet		(1 porsiyon 100 gr 154 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Karışık Tost	(1 adet 100 gr 256 kalori)" />
+
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Menemen		(1 porsiyon 150 gr 106 kalori)" />
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Yeşil Zeytin 	(5 adet  25 gr 40 kalori)" />
+
+
+        </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonVegetables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBasicFood"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/buttonstyle2"
+        android:text="Çorbalar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:id="@+id/linear2"
+            android:visibility="gone"
+            android:background="@drawable/trans600yeni"
+            android:layout_marginTop="20dp">
+
+
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ezogelin Çorba    (1 porsiyon 100 gr 45 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Domates Çorba	(1 porsiyon 100 gr 30 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mercimek Çorba 	(1 porsiyon 100 gr 56 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yayla Çorba	(1 porsiyon  100 gr 50 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tavuk Suyu Çorba  	(1 porsiyon 100 gr 55 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arpa Şehriye Corba 	(1 porsiyon 100 gr 91 kalori)"
+                android:checked="false"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+        android:id="@+id/buttonNuts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonVegetables"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="@color/white"
+        android:text="Pilavlar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:id="@+id/linear3"
+            android:visibility="gone"
+            android:background="@drawable/trans600yeni"
+            android:layout_marginTop="20dp">
+
+
+
+            <CheckBox
+                android:id="@+id/checkBox24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pirinç Pilavı	(1 porsiyon 100 gr 360 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mısırlı Pirinç Pilavı	(1 porsiyon 100 gr 303 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mengen Pilavı	(1 porsiyon 100 gr 101 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sebze  Pilavı	(1 porsiyon 100 gr 137 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bulgur Pilavı	(1 porsiyon 100 gr 244 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meyhane Pilavı	(1 porsiyon 100 gr 200 kalori)"
+                android:checked="false"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+        android:id="@+id/buttonLegumes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonNuts"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="@color/white"
+        android:text="Ana Yemek" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:orientation="vertical"
+            android:id="@+id/linear4"
+            android:visibility="gone"
+            android:background="@drawable/trans600yeni"
+            android:layout_marginTop="20dp">
+
+
+
+            <CheckBox
+                android:id="@+id/checkBox30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sebze Türlü	(1 porsiyon 100 gr 65 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tavuk Sote	(1 porsiyon 100 gr 169 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mantar Sote	(1 porsiyon 100 gr 63 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kadınbudu Köfte	(1 porsiyon 100 gr 405 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İmambayıldı	(1 porsiyon 100 gr 164 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tavuk Şiş		(1 porsiyon 100 gr 126 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Taze Fasulye	(1 porsiyon 100 gr 31 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fırın Tavuk	(1 porsiyon 100 gr 138 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Misket Köfte	(1 porsiyon 100 gr 197 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kuru Fasulye	(1 porsiyon 100 gr 97 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tavuk Fajita	(1 porsiyon 100 gr 143 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biber Dolma	(1 porsiyon 100 gr 79 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bezelye 		(1 porsiyon 100 gr 84 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Piliç Pane		(1 porsiyon 100 gr 264 kalori)"
+                android:checked="false"
+                />
+
+
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonFruits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLegumes"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="@color/white"
+        android:text="Meyve ve Sebze" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:id="@+id/linear5"
+            android:visibility="gone"
+            android:background="@drawable/trans600yeni"
+            android:layout_marginTop="20dp">
+
+
+
+            <CheckBox
+                android:id="@+id/checkBox44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Karpuz		(1 parça 100 gr 30 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Çilek		(5 tane 50 gr 33 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Erik		(5 tane 50 gr 46 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elma		(1 tane 100 gr 52 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Üzüm		(1 tane 100 gr 33 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Karadut 		(10 tane 50 gr 22 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Portakal		(1 tane 100 gr 47 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kavun		(1 parça 100 gr 34 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kiraz		(10 tane 50 gr 25 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kayısı		(5 tane 50 gr 24 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vişne		(10 tane 50 gr 25 kalori)"
+                android:checked="false"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonTatli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLegumes"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonstyle2"
+            android:textColor="@color/white"
+            android:text="Tatlı" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:orientation="vertical"
+            android:id="@+id/linear6"
+            android:visibility="gone"
+            android:background="@drawable/trans600yeni"
+            android:layout_marginTop="20dp">
+
+
+
+            <CheckBox
+                android:id="@+id/checkBox55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aşure		(1 porsiyon 100 gr 313 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Baklava		(1 porsiyon 100 gr 434 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox57"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Künefe		(1 porsiyon 100 gr 253 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dondurma	(1 porsiyon 100 gr 208 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokum		(1 porsiyon 100 gr 359 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tulumba		(1 porsiyon 100 gr 284 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Puding		(1 porsiyon 100 gr 120 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Magnolya		(1 porsiyon 100 gr 238 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kemalpaşa	(1 porsiyon 100 gr 167 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Revani		(1 porsiyon 100 gr 697 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kazandibi		(1 porsiyon 100 gr 201 kalori)"
+                android:checked="false"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonİceceks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLegumes"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonstyle2"
+            android:textColor="@color/white"
+            android:text="İçecek" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:id="@+id/linear7"
+            android:visibility="gone"
+            android:background="@drawable/trans600yeni"
+            android:layout_marginTop="20dp">
+
+
+
+            <CheckBox
+                android:id="@+id/checkBox66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kola 		(1 adet 330 gr 201 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fanta		(1 adet 330 gr 155 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox68"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sprite		(1 adet 330 gr 130 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox69"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ayran		(1 adet 200 gr 80 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Süt		(1 adet 200 gr 85 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Portakal Suyu	(1 adet 200 gr 90 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox72"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İce Tea		(1 adet 330 gr 99 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox73"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Şalgam		(1 adet 200 gr 10 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox74"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Limonlu Soda	(1 adet 200 gr 41 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Çay		(1 adet 100 gr 1 kalori)"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox76"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Su		(1 adet 150 gr 0 kalori)"
+                android:checked="false"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
