@@ -4,7 +4,7 @@
 
 Bu proje kullanıcıdan aldığı bilgileri kullanarak kullanıcının gün içinde tükettiği besinlerden kaç kalori aldığı, vücut kitle indeksi(vki) hesaplayabildiği, vki grafiğine bakarak hangi 
 aralıkta olduğunu görebildiği, tükettiği kalori miktarına göre haftalık olarak aldığı kcal miktarını görebildiği, gün içinde öğünlerde tükettiği besinleri ekleyebildiği ve öğünlerde hangi 
-besinin tükettiğini görebildiği bir Android Mobil Uygulamasıdır.<br/>
+besinin tükettiğini görebildiği bir Android Mobil uygulamasıdır.<br/>
 *- Kullanılan teknolojiler:* <br/>
 `Java Programlama Dili`,`Android Studio`, `XML (eXtensible Markup Language)`, `Android Emülatör ve Fiziksel Cihazlar`, `SharedPreferences`<br/>
 ## 1- Anasayfa
