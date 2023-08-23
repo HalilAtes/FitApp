@@ -10,8 +10,6 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 public class GrafikVki extends Activity {
-
-
     SeekBar seekbar1;
     TextView text1;
 
